@@ -1,0 +1,95 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-1{
+    height: 100vh;
+    background-image: url('images/bg_2.jpg');
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Young Serif', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: transparent; */
+    /* padding:20px 0; */
+    /* height: fit-content; */
+    border-bottom: 1px solid rgb(175, 175, 163) ;
+    /* border: none; */
+}
+
+.logo{
+    /* border-bottom: 2px solid rgb(184, 168, 168);  */
+    /* width: 100vw; */
+    text-align: center;
+    color: aliceblue;
+}
+
+nav > *{
+    margin: 20px;
+}
+
+.nav-links{
+    display: flex;
+    flex-basis: 60%;
+    /* background-color: beige; */
+    justify-content: space-evenly;
+}
+
+.nav-links li{
+    list-style-type: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 13px;
+    /* font-family: arial; */
+    color: beige;
+    font-weight: bolder;
+}
+
+.nav-links a:hover{
+    color: gold;
+    transition: color 0.3s ease;
+}
+
+.burger{
+    width: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    display: none;
+}
+
+@media(max-width:650px){
+    nav{
+        /* display: block; */
+        background: #000000b6;
+    }
+    nav > *{
+        /* display: block; */
+       margin: 10px;
+    }
+    .nav-links{
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease ;
+    }
+    
+    .burger{
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 5vw;
+    }
+    .menu-show{
+        height: 170px;
+    }
+}
