@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+button{
+    cursor: pointer;
+}
 .container-1{
     height: 100vh;
     background-image: url('images/bg_2.jpg');
@@ -167,10 +169,19 @@ nav > *{
 
 .btn1{
     background-color: goldenrod;
+    transition: all 0.15s linear;
 }
 .btn2{
 color: aliceblue;
 background: transparent;
+backdrop-filter: blur(6px);
+
+transition: all 0.15s linear;
+}
+
+.btn1:hover{
+    background-color: transparent;
+    backdrop-filter: blur(6px);
 }
 
 .btn2:hover{
@@ -181,19 +192,19 @@ background: transparent;
 .two{
     font-family: arial;
     width: 100%;
-    height: 200px;
-    background-color: brown;
+    height: 30vh;
+    background-color: rgb(156, 113, 113);
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
 .card{
-    background: rgb(196 155 99);
+    background: #c49b63;
     color: white;
     padding: 1rem;
-    height: 300px;
-    width: clamp(300px,600px,60vw);
+    height: max-content;
+    width: 35vw;
     position: absolute;
     bottom: 0;
     /* text-align: center; */
@@ -231,4 +242,67 @@ background: transparent;
 
 .card button{
     padding: 0.8rem;
+    transition: all 0.1s ease;
+    border: none;
 }
+.card button:hover{
+background-color: black;
+color: aliceblue;
+}
+
+
+.timings{
+    background: #000;
+    color: aliceblue;
+    display: flex;
+    width: 65vw;
+    justify-content: center;
+    align-items: baseline;
+    gap: 3%;
+    padding: 2rem;
+}
+
+.timings i{
+    color: #c49b63;
+    padding: 4px;
+}
+
+.timings span{
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 0.6rem;
+    /* font-size: large; */
+}
+.timings .col{
+    min-width: 25%;
+}
+
+.col p{
+    padding-left: 0.6rem;
+    color: #7e7e7e;
+}
+
+@media (max-width:600px){
+    .card form, .two{
+        display: block;
+       
+    }
+    .card{
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
+    form input,form button{
+        display: block;
+        margin-top: 0.8rem;
+        width: 90%;
+    }
+    .timings{
+        width: 100%;
+        display: block;
+    }
+    .col{
+        margin: 1rem;
+    }
+}
+
