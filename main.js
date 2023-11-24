@@ -1,6 +1,7 @@
 let menubtn=document.querySelector('.burger')
 let menu=document.querySelector('.nav-links')
 let container=document.querySelector('.container-1')
+let nav=document.querySelector("nav")
 
 // let imgs=["images/bg_2.jpg","images/bg_1.jpg","images/bg_2.jpg"]
 
@@ -18,3 +19,4 @@ menubtn.addEventListener("click",()=>{
         menubtn.innerHTML=`&#${9776}`
     }
 })
+
