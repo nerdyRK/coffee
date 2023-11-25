@@ -424,10 +424,10 @@ lord-icon{
         }
 
         .four{
-            padding: 2rem;
+            padding: 1.5rem;
         }
         .four .col{
-            min-width: 100%;
+            min-width: 90%;
         }
 
     }
