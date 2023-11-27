@@ -472,7 +472,7 @@ lord-icon {
 .drinks img {
     /* flex: 1; */
     width: clamp(100px, 18vw, 250px);
-    border-radius: 20%;
+    border-radius: 15%;
     margin: 0.8rem;
 }
 
@@ -510,12 +510,18 @@ lord-icon {
         .disc-menu{
             flex-direction: column;
             width: 100%;
+            padding: 5rem 2.5rem;
         }
+
         .disc-menu .text,.drinks{
             width: 100%;
         }
+
         .drinks img{
             width: clamp(200px,90%,400px);
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
         }
     
     }
